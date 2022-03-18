@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+}
+
+.input-field{
+    border-radius: 7px;
+    height: 30px;
+    width: 250px;
+    margin-left: 50px;
+}
+
+.header-container{
+    background-color: rgb(16, 90, 124);
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+
+.canvas-wraper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.canvas-container{
+    border: 1px solid;
+    width: 50%;
+    margin-bottom: 40px;
+    margin-top: 7%;
+}
+
+.download-button{
+    width: 125px;
+    height: auto;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    margin-bottom: 30px;
+    font-size: larger;
+}
+
+.footer-container{
+    background-color: rgb(89, 47, 144);
+    display: flex;
+    align-items: center;
+    height: 50px;
+    color: white;
+    justify-content: flex-end;
+    padding-right: 125px;
+    position: fixed;
+    bottom: 0;
+    width: 100% ;
+}
+
+.para-pading{
+    padding: 82px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js">
+    </script>
+  </head>	
+  <body>
+    <div class="header-container">
+      <input type="text" name="header" id="header" placeholder="Enter Header">
+      <input type="button" id="header-button" value="Add header" onclick="AddHeader()">
+    </div>
+      <div class="canvas-wraper">
+        <canvas id="canvas-image" class="canvas-container">
+        </canvas>
+          <div class="flex-container">
+          <div><input type="file" name="File" id="file-input"></div>
+          <div>
+            <input type="button" name="download" id="downloadbutton" onclick="DownloadPic();" value="Download">
+          </div>
+        </div>
+      </div>
+     <footer class="footer-container">
+      <div class="Footer">
+        <input type="text" name="footer" id="footer" placeholder="Enter Footer" />
+        <input type="button" id="footer-button" value="Add Footer" onclick="AddFooter();">
+      </div>  
+     </footer>
+  </body>
+</html>
