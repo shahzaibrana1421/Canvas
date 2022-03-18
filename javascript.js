@@ -1,11 +1,16 @@
 function AddHeader() {
   var headerText = document.getElementById("header").value;
   var c = document.getElementById("canvas-image");
-  console.log(canvas)
   var ctx = c.getContext("2d");
   ctx.fillStyle = "black";
   ctx.font = "bold 15px sans-serif";
-  ctx.fillText(headerText, 600, 15);
+  ctx.fillText(headerText, 600 , 15);
+
+  $('input').keyup(function() {
+    context.clearRect(0, 0,  canvas.width,canvas.height);
+    context.fillText($(this).val(), 500, 15);
+ 
+  });
 }
 
 
@@ -15,14 +20,26 @@ function AddFooter() {
   var ctx = c.getContext("2d");
   ctx.fillStyle = "black";
   ctx.font = "bold 15px sans-serif";
-  ctx.fillText(footerText, 600, 660);
+  ctx.fillText(footerText, 500, 700);
+
+  $('input').keyup(function() {
+    context.clearRect(0, 0,  canvas.width,canvas.height);
+    context.fillText($(this).val(), 500, 700);
+ 
+  });
 }
 
 
 document.addEventListener("DOMContentLoaded", function()   {
   
-  document.getElementById("header-button").addEventListener('click',function() {
-    document.getElementById
+  document.getElementById("header").addEventListener('keyup',function() {
+    const value = document.getElementById("header").value
+    document.getElementById('header-copied').innerHTML = value
+  })
+
+  document.getElementById("footer").addEventListener('keyup',function() {
+    const value = document.getElementById("footer").value
+    document.getElementById('footer-copied').innerHTML = value
   })
 
  document.getElementById("file-input").addEventListener('change', function() {
@@ -54,11 +71,8 @@ var ctx = canvas.getContext("2d");
 ctx.fillStyle = "#FFFFFF";
 ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-
-
 console.log(document.getElementById("file-input"))
 document.getElementById("file").addEventListener("change", function (event) {
-  console.log("------ i ma in ")
   if (event.target.files) {
     let file = event.target.files[0];
     var reader = new FileReader();

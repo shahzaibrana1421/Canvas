@@ -9,12 +9,17 @@
   </head>	
   <body>
     <div class="header-container">
-      <input type="text" name="header" id="header" placeholder="Enter Header">
-      <input type="button" id="header-button" value="Add header" onclick="AddHeader()">
+      <input type="text" name="header" id="header" placeholder="Enter Header" onchange="AddHeader();">
+      <!-- <input type="button" id="header-button" value="Add header" onchange="AddHeader()"> -->
     </div>
       <div class="canvas-wraper">
+        <div id="header-copied"></div> 
+               
         <canvas id="canvas-image" class="canvas-container">
+
+
         </canvas>
+        <div id="footer-copied"></div>
           <div class="flex-container">
           <div><input type="file" name="File" id="file-input"></div>
           <div>
@@ -24,8 +29,8 @@
       </div>
      <footer class="footer-container">
       <div class="Footer">
-        <input type="text" name="footer" id="footer" placeholder="Enter Footer" />
-        <input type="button" id="footer-button" value="Add Footer" onclick="AddFooter();">
+        <input type="text" name="footer" id="footer" placeholder="Enter Footer"onchange="AddFooter();">
+        <!-- <input type="button" id="footer-button" value="Add Footer" onchange="AddFooter();"> -->
       </div>  
      </footer>
   </body>

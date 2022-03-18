@@ -18,17 +18,19 @@ body{
 
 
 .canvas-wraper{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 90px;
 }
 
 .canvas-container{
     border: 1px solid;
-    width: 50%;
-    margin-bottom: 40px;
-    margin-top: 7%;
+    width: 69rem;
+    height: 100%
+    
 }
 
 .download-button{
@@ -39,6 +41,18 @@ body{
     color: white;
     margin-bottom: 30px;
     font-size: larger;
+}
+
+#header-copied {
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+#footer-copied{
+    position: absolute;
+    top: 90%;
+    left: 50%;
 }
 
 .footer-container{
@@ -61,4 +75,5 @@ body{
 .flex-container{
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
