@@ -4,7 +4,7 @@ function AddHeader() {
   var ctx = c.getContext("2d");
   ctx.fillStyle = "black";
   ctx.font = "bold 15px sans-serif";
-  ctx.fillText(headerText, 600 , 15);
+  ctx.fillText(headerText, 500 , 15);
 
   $('input').keyup(function() {
     context.clearRect(0, 0,  canvas.width,canvas.height);
@@ -20,11 +20,11 @@ function AddFooter() {
   var ctx = c.getContext("2d");
   ctx.fillStyle = "black";
   ctx.font = "bold 15px sans-serif";
-  ctx.fillText(footerText, 500, 700);
+  ctx.fillText(footerText, 500, 600);
 
   $('input').keyup(function() {
     context.clearRect(0, 0,  canvas.width,canvas.height);
-    context.fillText($(this).val(), 500, 700);
+    context.fillText($(this).val(), 500, 600);
  
   });
 }
