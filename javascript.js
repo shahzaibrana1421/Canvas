@@ -20,7 +20,7 @@ function AddFooter() {
   var ctx = c.getContext("2d");
   ctx.fillStyle = "black";
   ctx.font = "bold 15px sans-serif";
-  ctx.fillText(footerText, 500, 600);
+  ctx.fillText(footerText, 500, 500);
 
   $('input').keyup(function() {
     context.clearRect(0, 0,  canvas.width,canvas.height);
