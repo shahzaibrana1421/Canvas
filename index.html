@@ -10,15 +10,15 @@
   <body>
     <div class="header-container">
       <input type="text" name="header" id="header" placeholder="Enter Header" onchange="AddHeader();">
-      <!-- <input type="button" id="header-button" value="Add header" onchange="AddHeader()"> -->
+      <input type="number" name="x-axis" id="hx-axis" placeholder="enter header x-axis">
+    </div>
+    <div>
+      <!-- <input type="text" name="caption" id="caption" placeholder="Enter body text" onchange="Addcaption();">
+      <input type="number" name="x-axis" id="bx-axis" placeholder="enter caption x-axis"> -->
     </div>
       <div class="canvas-wraper">
         <div id="header-copied"></div> 
-               
-        <canvas id="canvas-image" class="canvas-container">
-
-
-        </canvas>
+        <canvas id="canvas-image" class="canvas-container"> </canvas>
         <div id="footer-copied"></div>
           <div class="flex-container">
           <div><input type="file" name="File" id="file-input"></div>
@@ -30,7 +30,7 @@
      <footer class="footer-container">
       <div class="Footer">
         <input type="text" name="footer" id="footer" placeholder="Enter Footer"onchange="AddFooter();">
-        <!-- <input type="button" id="footer-button" value="Add Footer" onchange="AddFooter();"> -->
+        <input type="number" name="fx-axis" id="fx-axis" placeholder="enter footer x axis" class="placeholder-margin">
       </div>  
      </footer>
   </body>

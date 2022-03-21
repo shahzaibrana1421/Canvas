@@ -4,14 +4,31 @@ function AddHeader() {
   var ctx = c.getContext("2d");
   ctx.fillStyle = "black";
   ctx.font = "bold 15px sans-serif";
-  ctx.fillText(headerText, 500 , 15);
+  const xh = document.getElementById ("hx-axis").value
+  ctx.fillText(headerText, xh , 15);
 
   $('input').keyup(function() {
     context.clearRect(0, 0,  canvas.width,canvas.height);
-    context.fillText($(this).val(), 500, 15);
+    context.fillText($(this).val(), xh, 15);
  
   });
 }
+
+// function Addcaption() {
+//   var bodyText = document.getElementById("caption").value;
+//   var c = document.getElementById("canvas-image");
+//   var ctx = c.getContext("2d");
+//   ctx.fillStyle = "black";
+//   ctx.font = "bold 15px sans-serif";
+//   const xb = document.getElementById ("bx-axis").value
+//   ctx.fillText(bodyText, xb , 15);
+
+//   $('input').keyup(function() {
+//     context.clearRect(0, 0,  canvas.width,canvas.height);
+//     context.fillText($(this).val(), xh, 15);
+ 
+//   });
+// }
 
 
 function AddFooter() {
@@ -20,11 +37,12 @@ function AddFooter() {
   var ctx = c.getContext("2d");
   ctx.fillStyle = "black";
   ctx.font = "bold 15px sans-serif";
-  ctx.fillText(footerText, 500, 500);
+  const xf = document.getElementById ("fx-axis").value
+  ctx.fillText(footerText, xf , 651);
 
   $('input').keyup(function() {
     context.clearRect(0, 0,  canvas.width,canvas.height);
-    context.fillText($(this).val(), 500, 600);
+    context.fillText($(this).val(), xf, 653);
  
   });
 }

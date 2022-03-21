@@ -29,8 +29,7 @@ body{
 .canvas-container{
     border: 1px solid;
     width: 69rem;
-    height: 37rem;
-    
+    height: 37rem;    
 }
 
 .download-button{
@@ -76,4 +75,8 @@ body{
     display: flex;
     justify-content: center;
     margin-top: 20px;
+}
+
+.placeholder-margin{
+    margin-right: 7px;
 }
