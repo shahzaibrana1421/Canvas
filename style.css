@@ -28,8 +28,7 @@ body{
 
 .canvas-container{
     border: 1px solid;
-    width: 69rem;
-    height: 37rem;    
+    width: 60%; 
 }
 
 .download-button{
@@ -42,17 +41,6 @@ body{
     font-size: larger;
 }
 
-#header-copied {
-    position: absolute;
-    top: 0;
-    left: 50%;
-}
-
-#footer-copied{
-    position: absolute;
-    top: 90%;
-    left: 50%;
-}
 
 .footer-container{
     background-color: rgb(89, 47, 144);
@@ -79,4 +67,18 @@ body{
 
 .placeholder-margin{
     margin-right: 7px;
+}
+
+.overflow{
+    overflow: hidden;
+}
+
+.text-align{
+    text-align: center;
+    justify-content: center;
+}
+.body-head-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
